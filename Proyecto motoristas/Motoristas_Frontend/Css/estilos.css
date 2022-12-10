@@ -1,0 +1,597 @@
+
+@font-face {
+    font-family: 'Glory';
+    src: url('../Css/Fonts/Glory-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+  @font-face {
+    font-family: 'FamiljenGrotesk';
+    src: url('../Css/Fonts/GoudyBookletter1911-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+ body{
+      background-color:#c4dcd7 ; 
+    margin: 0;
+
+}
+
+.Oculto{
+  display: none;
+}
+
+nav{
+    background-color: #E0BB00 !important; 
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items:center; 
+    align-content: center;
+    justify-content: space-between;
+   
+    
+}
+
+/*Primera pagina*/
+#logo-1 img{
+  height: 4rem;
+  width: 6rem;
+  margin-right: 0.1rem;
+  margin-top: 0.9rem;
+}
+
+
+.icono{
+  background-image: url(../Css/Img/Motorista.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  width: 10rem; 
+}
+
+.texto{
+  font-size: 2rem;
+  font-family: 'Glory';
+  margin-bottom: 1rem;
+}
+
+.formulario1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  background-color: rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  height: 300px;
+  width: 290px; 
+  font-family: 'FamiljenGrotesk';
+  font-weight: lighter;
+  font-size: 1.3rem;
+  padding: 25px 0px;
+  color: rgb(0, 0, 0);
+
+}
+
+.formulario1 .btn{
+font-family: 'FamiljenGrotesk';
+  font-size: 1.3rem;
+  background-color: #261866;
+  height: 3.5rem;
+  width: 9.3rem;
+  border-radius: 5px;
+  color: white;
+  border-style:none;
+}
+
+/*Inicio de sesion*/
+
+
+.logo img{
+  height: 4.3rem;
+  width: 5rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+#formulario2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  background-color: rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  height: 20rem;
+  width: 20.5rem; 
+  font-family: 'FamiljenGrotesk';
+  font-size: 0.9rem;
+  padding: 25px 0px;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+}
+
+#formulario2 .lbl{
+  font-family: 'FamiljenGrotesk';
+    font-size: 1rem;
+    background-color: #ffffff;
+    height: 2rem;
+    width: 17.5rem;
+    color: rgb(0, 0, 0); 
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+
+       
+}
+
+#formulario2 .lbl:focus{
+  outline: none;
+  border: none;
+}
+
+.correcto{
+  border:4px solid #4CAF50 !important; 
+}
+
+.incorrecto{
+  border: 4px solid red !important;
+  opacity: 1;
+}
+
+
+
+#formulario2 .btn{
+  font-family: 'FamiljenGrotesk';
+    font-size: 1.2rem;
+    background-color:  #261866;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 5%;
+    color: white;
+    border-style: none;
+}
+
+.back{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 2.7rem;
+  background-color: #E0BB00;
+  border-style:groove;
+ font-size: 2.3rem;
+ color: white;
+}
+
+#formulario2 .texto2{
+    font-size: 2rem;
+    font-family: 'Glory';
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+#mensaje{
+   margin-left: 115px;
+}
+
+#mensaje label{
+    text-decoration: underline;
+ }
+
+ /*Registro*/
+
+ #formulario3-tel{
+  display: flex;
+  align-items: center;
+}
+
+
+#formulario3-tel{
+  font-family: 'Glory';
+  color: rgb(0, 0, 0); 
+  
+}
+#formulario3-tel select{
+  font-size: 1rem;
+  margin: 5px;
+  width: 4rem;
+  background-color: #ffffff;
+  height: 2rem;
+  border-color: white;
+  border-radius: 5px;
+}
+
+#formulario3-tel input{
+  margin: 5px;
+  font-size: 1rem;
+  width: 12.7rem;
+  background-color: #ffffff;
+  height: 2rem;
+  border-color: white;
+  padding-left: 5px;
+  border-radius: 5px;
+
+}
+
+#formulario3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  background-color: rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  height: 25rem;
+  width: 20.5rem; 
+  font-family: 'Glory';
+  font-size: 0.6rem;
+  padding: 25px 0px;
+  margin-top: 25px;
+  color: rgb(0, 0, 0);
+}
+
+
+.texto2{
+font-size: 2rem;
+font-family: 'Glory';
+margin-top: 30px;
+
+}
+
+#formulario3 .lbl{
+  font-family: 'FamiljenGrotesk';
+    font-size: 1rem;
+    background-color: #ffffff;
+    height: 2rem;
+    width: 17.5rem;
+    color: rgb(0, 0, 0); 
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+
+}
+
+#formulario3 .lbl:focus{
+  outline: none;
+  border: none;
+}
+
+#formulario3 .btn{
+font-family: 'FamiljenGrotesk';
+  font-size: 1.3rem;
+  background-color: #CC6458;
+  height: 3.1rem;
+  width: 9.3rem;
+  border-radius: 5%;
+  color: white;
+  border-style: none;
+}
+
+
+/*Toggle*/
+
+#navH{
+  display: none;
+  background-color: #E0BB00;
+  height: 80px;
+  position: relative;
+
+}
+
+.showNavH{
+  display: inline-block;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  max-width: 1000px;
+  line-height: 50px;
+  z-index: 100;
+}
+
+.contenedor-logo img{
+  height: 4.3rem;
+  width: 5rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+
+
+.contenedor-logo{
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+
+
+}
+
+.toggle{
+  display: inline-block;
+  margin: 15px 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-right: 25px 25px;
+  font-size: 35px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: .3s;
+  
+}
+
+
+
+.links .link a{
+  text-decoration: none;
+  font-size:1rem;
+  margin: 0px;
+  letter-spacing: 2px;
+  transition: .3s;
+  }
+
+.links{
+  margin-top: 860px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background:rgba(255, 255, 255, 0.973);
+  text-align:start;
+  overflow: hidden;
+  height: 950%;
+  width: 80%;
+  left: -100%;
+  list-style: none;
+  list-style: 0;
+  transition: .5s;
+}
+
+.active{
+  left: 0px;
+}
+
+.links .link:hover{
+  background-color: rgba(245, 185, 185, 0.452);
+
+}
+
+
+
+/*Fin toggle*/
+
+
+
+
+.bars{
+color: #e9dfad;
+font-size: 3rem;
+width: 3rem;
+font-weight: lighter;
+}
+
+
+
+.menu{
+position: relative;
+display: flex;
+margin:12rem 1rem;
+
+}
+
+.menu-btn{
+display: flex; 
+ height: 10px; 
+ align-items: center;
+}
+
+.item{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+justify-items: center;
+width: 80%;
+height: 40vh;
+font-family: 'Glory';
+
+
+}
+
+#vertical{
+display: flex;
+justify-content: space-evenly;
+width: 4rem;
+padding: 0 15px;
+
+
+}
+
+#vertical hr{
+z-index: -1;
+margin: 5px 0;
+width:2vw;
+border-width:0;
+color:#000;
+background-color:rgb(0, 0, 0);
+border-color: #000;
+font-weight: bolder;
+font-style: normal;
+opacity: 0.9;
+
+}
+
+
+
+.item a{
+display: flex;
+align-items:center;
+justify-content: space-around;
+height: 6rem;
+background-color: #10536B;
+border-radius: 15px;
+box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.432);
+
+}
+
+.item a:link, a:visited, a:active {
+text-decoration:none;
+}
+
+
+.item a img{
+padding-left: 10px;
+height: 4rem;
+width: 4rem;
+}
+
+.item a h2{
+padding-right: 10px;
+font-size: 1.5rem;
+color: white;
+text-decoration: transparent;
+
+}
+
+#aceptarOrden nav{
+  background-color: #E0BB00;
+  height: 4rem;
+  width: 100%;    
+}
+
+#titl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 100%;  
+}
+
+#aceptarOrden nav h2{
+  font-family: 'Fjalla One';
+  font-size: 1.3rem;
+  color: white;
+}
+#aceptarOrden nav img{
+  width: 3rem;
+  height:3.5rem;
+  padding-bottom: 0.8rem;
+  margin-left: 12px;
+}
+
+
+/*Aceptar orden*/
+#encabezado{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 30px;
+  width: 100%;
+  padding: 10px 0;
+  background-color:#E0BB00; ;
+
+}
+#encabezado img{
+height: 40px;
+padding-left: 10px;
+padding-bottom: 5px;
+}
+
+#encabezado h2{
+font-size: 1.5rem ;
+color: white;
+font-weight: bold;
+font-family: 'Glory';
+padding-right: 10px;
+
+}
+
+.ped{
+  margin: 0px 35px;
+  
+}
+
+.font-pedido{
+  font-family: 'FamiljenGrotesk';
+  font-size: 1rem;
+}
+.time-color{
+  color: red;
+}
+
+.check{
+padding-left: 3px;
+}
+.check input{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.check input:checked{
+  cursor: pointer;
+  background-color:#4CAF50;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  appearance: none;
+
+}
+
+/*ordenes activas*/
+#formularioO{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color:  rgba(255, 255, 255, 0.432);
+  border-radius: 10px;
+  height: 15rem;
+  width: 20.5rem; 
+  font-family: 'Glory';
+  font-size: 1rem;
+  padding: 30px;
+  color: rgba(0, 0, 0);
+  position: relative;
+  margin-top: 10px;
+
+}
+
+#PedidoActivo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+#formularioO .btn{
+  font-family: 'FamiljenGrotesk';
+    font-size: 1.2rem;
+    background-color:  #261866;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 5%;
+    color: white;
+    border-style: none;
+}
+
+.negrita{
+  font-weight: bold;
+}
+
+/*registro de ordenes activas*/
+
+#registro-ordenes .ped{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Glory';
+}

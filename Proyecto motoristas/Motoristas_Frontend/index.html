@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <script src="https://kit.fontawesome.com/390b75e480.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+  
+    <section id="primer-Pagina">
+      <nav></nav>
+      <div id="logo-1" style="display: flex; justify-content: flex-end;">
+         <img src="Css/Img/Nlogo.png" >
+      </div>
+      <div style="display:flex;; flex-direction: column; align-items: center; justify-content: center;">
+         <div class="icono"></div>
+         <div class="texto">
+           Bienvenido
+         </div>
+     <div class="formulario1">
+        <button class="btn" onclick="mostrarSiguiente('inicio-sesion')">Iniciar Sesion</button>
+         <h4>¿Quieres trabajar con nosotro?</h4>
+         <button class="btn" onclick="mostrarSiguiente('registrarse')">Registrarse</button>
+     </div>
+     </div>
+    </section>
+
+    <section id="inicio-sesion" class="Oculto">
+     <nav>
+        <div class="back"><a onclick="volver('primer-Pagina')"><i class="fa-solid fa-arrow-left"></i></a></div>
+          <div class="logo" >
+            <img src="Css/Img/Nlogo.png" >
+          </div>
+        </div>
+     </nav>
+    <div style="height: 700px; display:flex; flex-direction: column; align-items: center; justify-content: center;">
+        
+          <form id="formulario2">
+            <div class="texto2">
+              Iniciar sesion
+            </div>
+              <input type="email" id="em" name="correo" placeholder="example@gmail.com" class="lbl" >
+              <input type="password" id="cont" name="contra" placeholder="Contraseña" class="lbl" >
+              <div id="mensaje">
+                <label>¿Olvidaste tu contraseña?</label>
+              </div>
+              
+              <button type="submit" class="btn" >Iniciar Sesion</button>
+          </form>
+        </div>
+    </section>
+
+      <section id="registrarse" class="Oculto">
+        <nav>
+          <div class="back"><a onclick="volver('primer-Pagina')"><i class="fa-solid fa-arrow-left"></i></a></div>
+            <div class="logo" >
+              <img src="Css/Img/Nlogo.png" >
+            </div>
+          </div>
+       </nav>
+    
+      <div style=" height: 700px; display:flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="texto2">
+          Registrarse
+        </div>
+        <form id="formulario3">
+          <input type="text" id="nom" name="nombre" placeholder="Nombre" class="lbl">
+          <input type="text" id="ape" name="apellido" placeholder="Apellido" class="lbl">
+          <div id="formulario3-tel">
+            <select > 
+              <option >+504</option>
+              <option >+503</option>
+            </select>
+            <input type="text" id="cel" name="celular" placeholder="Celular">
+          </div>
+          <button class="btn">Enviar Codigo</button>
+            <input type="email" id="em2" name="cor2" placeholder="example@gmail.com" class="lbl">
+            <input type="password" id="cont2" name="contra2" placeholder="Contraseña" class="lbl">
+            <button type="submit" class="btn">Registrarme</button>
+        </form>
+      </div>
+      </section>
+
+  
+      <nav id="navH">
+        <div class="contenedor">
+          <div class="toggle">
+            |||
+            </div>
+          <ul class="links">
+              <li class="link backI"> <a >GetHome</a></li>
+              <li class="link"> <a href="#">Perfil</a></li>
+              <li class="link"> <a href="#">Configuraciones</a></li>
+              <li class="link"> <a href="#">Cerrar Sesion</a></li>
+          </ul>
+          <div class="contenedor-logo">
+            <img src="Css/Img/Nlogo.png" >
+          </div>
+        </div>
+      </nav>
+
+<section id="inicio" class="Oculto">
+
+
+<div class="menu">
+  <div id="vertical"><hr><hr></div>
+  <div class="item">
+    <a onclick="mostrarSiguiente('aceptarOrden')"><div class="menu-btn"><h2>Aceptar Nueva Orden   </h2><img src="Css/Img/si.png" alt=""></div></a>
+    <a onclick="mostrarSiguiente('ordenes-Activas')"><div class="menu-btn"><h2 >Ordenes Activas  </h2><img src="Css/Img/portapapeles.png" alt=""></div></a>
+    <a onclick="mostrarSiguiente('registro-ordenes')"><div class="menu-btn"><h2 style="text-align:center ;">Registro de ordenes   <br> entregadas</h2><img src="Css/Img/terminado.png" alt=""></div></a>
+  </div>
+</div>
+</section>
+
+
+
+<section id="aceptarOrden" class="Oculto">
+<div id="encabezado"><h2>Aceptar nueva orden</h2> <img src="Css/Img/aceptar (1).png" alt=""></div>
+  <section id="Pedido">
+    <div style="display: flex; justify-content:center; align-items: center;  margin-top: 15px;"><hr style="background-color: #000; width: 90%; opacity: 1;"></div>
+            <div class="ped" style="display: flex; justify-content:space-between; align-items: center;">
+            <div class="font-pedido">Pedido realizado en: Burguer King<br>
+             Direccion: Colonia Centroamerica oeste
+            <br><br>
+            <div class="time-color">
+              Hace 10 minutos
+           </div>
+            </div>
+            <div class="check"><input type="checkbox"></div>
+            </div>
+    
+            <div style="display: flex; justify-content:center; align-items: center;  "><hr style="background-color: #000; width: 90%; opacity: 1;"></div>
+            <div class="ped" style="display: flex; justify-content:space-between; align-items: center;">
+            <div class="font-pedido">Pedido realizado en: Burguer King<br>
+             Direccion: Colonia Centroamerica oeste
+            <br><br>
+            <div class="time-color">
+              Hace 10 minutos
+           </div>
+            </div>
+            <div class="check"><input type="checkbox"></div>
+            </div>
+            <div style="display: flex; justify-content:center; align-items: center;  "><hr style="background-color: #000; width: 90%; opacity: 1;"></div>
+            <div class="ped" style="display: flex; justify-content:space-between; align-items: center;">
+            <div class="font-pedido">Pedido realizado en: Burguer King<br>
+             Direccion: Colonia Centroamerica oeste
+            <br><br>
+            <div class="time-color">
+              Hace 10 minutos
+           </div>
+            </div>
+            <div class="check"><input type="checkbox"></div>
+            </div>
+            <div style="display: flex; justify-content:center; align-items: center;  "><hr style="background-color: #000; width: 90%; opacity: 1;"></div>
+            <div class="ped" style="display: flex; justify-content:space-between; align-items: center;">
+            <div class="font-pedido">Pedido realizado en: Burguer King<br>
+             Direccion: Colonia Centroamerica oeste
+            <br><br>
+            <div class="time-color">
+              Hace 10 minutos
+           </div>
+            </div>
+            <div class="check"><input type="checkbox"></div>
+            </div>
+  </section>
+</section>
+
+
+<section id="ordenes-Activas" class="Oculto">
+  <div id="encabezado"><h2>Ordenes Activas</h2> <img src="Css/Img/reloj-de-pared.png" alt=""></div>
+  <section id="PedidoActivo">
+
+    <div id="formularioO" >
+      <div style="display: flex;" >
+         <div>
+            <p>
+               <span class="negrita">realizado en: </span> Burguer King<br>
+               <span class="negrita">Telefono del Cliente: </span> 98554422<br>
+               <span class="negrita">Direccion: </span> Colonia Centroamerica oeste<br>
+
+            </p>
+            <p>
+              <span class="negrita">Descripcion del pedido:</span><br>
+            Hamburguesa Philli shesse king sencilla + papas pequeñas + bebida mediana
+         </p>
+         </div>
+            <div>
+            <div class="ubic">
+            </div>
+            <div style="display:flex ; flex-direction: column; align-items: center;">
+               <p class="negrita">Unidades</p>
+               <div style="display: flex; justify-content: center; align-items: center; background-color:#fff ; width: 1.5rem;">1</div>
+            </div>
+         </div>
+      </div>
+      <div style="display:flex ; justify-content: space-between; align-items: center; width: 100%; ">
+        <p >
+         Hace 10 minutos
+        </p>
+        <div >
+          <span class="negrita">Total a pagar: </span><span style="color: #E0BB00; font-weight: bold;">L.70</span> 
+        </div>
+      </div>
+      <div>
+      <button class="btn">Entregada</button>
+      </div>
+   </div>
+  
+  </section>
+</section>
+
+<section id="registro-ordenes" class="Oculto">
+  <div id="encabezado"><h2>Registro de orenes entregadas</h2> <img src="Css/Img/obediente (1).png" alt=""></div>
+  
+  <section id="registro-ordenes">
+    <div style="display: flex; flex-direction: column; justify-content:center; align-items: center;  margin-top: 15px; text-align: center;"><hr style="background-color: #000; width: 90%;"></div>
+    <div class="ped" >
+    <div >Pedido realizado en: Burguer King<br>
+     Direccion: Colonia Centroamerica oeste
+    <br><br>
+    <div style="color: #E0BB00;">
+      Entregado hace 10 minutos
+   </div>
+    </div>
+    </div>
+    <div style="display: flex; justify-content:center; align-items: center;  margin-top: 15px;"><hr style="background-color: #000; width: 90%;"></div>
+     
+  </section>
+
+  </section>
+
+
+    
+      <script src="Js/Controlador.js"></script>
+      <script src="Js/Data.js"></script>
+
+</body>
+</html>
